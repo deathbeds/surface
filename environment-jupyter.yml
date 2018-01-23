@@ -5,8 +5,12 @@ channels:
   - defaults
 
 dependencies:
-  - jupyterlab
-  - ipywidgets
   - bqplot
+  - ipyleaflet
+  - ipyvolume
+  - ipywidgets
+  - jupyterlab
+  - pythreejs
+  - antlr-python-runtime
   - pip:
     - rise

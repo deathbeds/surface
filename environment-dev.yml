@@ -5,14 +5,16 @@ channels:
   - defaults
 
 dependencies:
-  - conda-build <3
-  - constructor
   - giflib
   - jupyterlab_launcher
   - libpng
   - matplotlib
+  - networkx
   - nodejs
   - notebook
   - pandas
   - python >=3.6,<3.7
+  - seaborn
   - setuptools
+  - pip:
+    - https://github.com/bollwyvl/sympy/archive/feat/parse_latex.tar.gz
