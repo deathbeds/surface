@@ -1,21 +1,21 @@
-FROM jupyter/scipy-notebook:400c69639ea5
+FROM jupyter/scipy-notebook:27ba57364579
 
 # handle non-project deps
 RUN conda install -y -n root git
 
 # contains everything it reliably can
-COPY environment-dev.yml /home/jovyan/ktop/environment-dev.yml
+COPY environment-dev.yml /home/jovyan/surface/environment-dev.yml
 RUN conda env update --quiet \
     -n root \
-    --file /home/jovyan/ktop/environment-dev.yml \
+    --file /home/jovyan/surface/environment-dev.yml \
   && conda clean -tipsy \
   && conda list
 
 # install things with demonstrated install weirdness
-COPY environment-jupyter.yml /home/jovyan/ktop/environment-jupyter.yml
+COPY environment-jupyter.yml /home/jovyan/surface/environment-jupyter.yml
 RUN conda env update --quiet \
     -n root \
-    --file /home/jovyan/ktop/environment-jupyter.yml \
+    --file /home/jovyan/surface/environment-jupyter.yml \
   && conda clean -tipsy \
   && conda list
 
@@ -32,7 +32,7 @@ RUN set -ex \
   && jupyter labextension install --no-build \
     @jupyterlab/hub-extension \
   && jupyter labextension install --no-build \
-    @jupyter-widgets/jupyterlab-manager \
+    "@jupyter-widgets/jupyterlab-manager@0.33.0" \
   && jupyter labextension install --no-build \
     jupyter-leaflet \
   && jupyter labextension install --no-build \

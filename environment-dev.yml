@@ -1,4 +1,4 @@
-name: _ktop-dev
+name: _surface-dev
 
 channels:
   - conda-forge
@@ -16,5 +16,7 @@ dependencies:
   - python >=3.6,<3.7
   - seaborn
   - setuptools
+  - antlr-python-runtime
+  - pygraphviz
   - pip:
     - https://github.com/bollwyvl/sympy/archive/feat/parse_latex.tar.gz
