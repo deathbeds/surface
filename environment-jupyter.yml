@@ -13,4 +13,4 @@ dependencies:
   - pythreejs
   - pip:
     - rise
-    - https://github.com/deathbeds/XXX/archive/master.tar.gz
+# SOON:    - https://github.com/deathbeds/XXX/archive/master.tar.gz
