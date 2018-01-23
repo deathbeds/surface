@@ -19,4 +19,5 @@ dependencies:
   - antlr-python-runtime
   - pygraphviz
   - pip:
+    - git+https://github.com/deathbeds/aye@tests
     - https://github.com/bollwyvl/sympy/archive/feat/parse_latex.tar.gz
