@@ -5,8 +5,8 @@ channels:
   - defaults
 
 dependencies:
-  - antlr-python-runtime
-  - antlr4
+  - antlr-python-runtime >=4,<5
+  - antlr >=4,<5
   - giflib
   - jupyterlab_launcher
   - libpng
