@@ -21,5 +21,5 @@ dependencies:
   - seaborn
   - setuptools
   - pip:
-    - https://github.com/deathbeds/aye/archive/b3aea95d54837f674bee1fe6f3d9f53cf2cf6a79.tar.gz
+    - https://github.com/deathbeds/aye/archive/3cfdcecd7b8123917b2d22bd5acd50f2c54b19d1.tar.gz
     - https://github.com/sympy/sympy/archive/1e8b5da3edbdbfe23cb664e1fe4982d88133c9b9.tar.gz
