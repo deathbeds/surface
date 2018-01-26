@@ -7,6 +7,7 @@ channels:
 dependencies:
   - antlr-python-runtime >=4,<5
   - antlr >=4,<5
+  - bokeh
   - giflib
   - jupyterlab_launcher
   - libpng
