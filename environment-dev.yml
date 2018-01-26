@@ -5,6 +5,8 @@ channels:
   - defaults
 
 dependencies:
+  - antlr-python-runtime
+  - antlr4
   - giflib
   - jupyterlab_launcher
   - libpng
@@ -13,11 +15,10 @@ dependencies:
   - nodejs
   - notebook
   - pandas
+  - pygraphviz
   - python >=3.6,<3.7
   - seaborn
   - setuptools
-  - antlr-python-runtime
-  - pygraphviz
   - pip:
-    - git+https://github.com/deathbeds/aye@tests
-    - https://github.com/bollwyvl/sympy/archive/feat/parse_latex.tar.gz
+    - https://github.com/deathbeds/aye/archive/b3aea95d54837f674bee1fe6f3d9f53cf2cf6a79.tar.gz
+    - https://github.com/sympy/sympy/archive/1e8b5da3edbdbfe23cb664e1fe4982d88133c9b9.tar.gz
