@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:27ba57364579
+FROM jupyter/scipy-notebook:29b68cd9e187
 
 # handle non-project deps
 RUN conda install -y -n root git
