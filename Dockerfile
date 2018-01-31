@@ -25,22 +25,12 @@ RUN set -ex \
   && jupyter nbextension enable rise --py --sys-prefix
 
 # do this to get the nodejs toolchain
-RUN jupyter lab build
+RUN jupyter lab build \
+  && jupyter labextension list
 
 # install and validate labextensions
-RUN set -ex \
-  && jupyter labextension install --no-build \
-    @jupyterlab/hub-extension \
-  && jupyter labextension install --no-build \
-    "@jupyter-widgets/jupyterlab-manager@0.33.0" \
-  && jupyter labextension install --no-build \
-    jupyter-leaflet \
-  && jupyter labextension install --no-build \
-    jupyter-threejs \
-  && jupyter labextension install --no-build \
-    ipyvolume \
-  && jupyter labextension install --no-build \
-    bqplot
+COPY labextensions.sh /home/jovyan/surface/
+RUN bash /home/jovyan/surface/labextensions.sh
 
 RUN jupyter lab build \
   && jupyter labextension list

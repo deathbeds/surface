@@ -7,3 +7,5 @@ services:
     command: jupyter lab --no-browser --debug
     ports:
       - 8888:8888
+    volumes:
+      - ./notebooks:/home/jovyan/notebooks
