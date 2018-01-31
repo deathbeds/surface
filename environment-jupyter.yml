@@ -13,6 +13,5 @@ dependencies:
   - pythreejs
   - vaex
   - pip:
-    - jupyterlab-discovery
     - rise
-    - https://github.com/deathbeds/XXX/archive/1d0470d0771739988e27acc4981fe26969ea1471.tar.gz
+    - https://github.com/deathbeds/XXX/archive/c3750c847ca13f56980f0c985fb08835afe663e2.tar.gz

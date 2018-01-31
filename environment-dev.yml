@@ -5,14 +5,15 @@ channels:
   - defaults
 
 dependencies:
-  - antlr >=4,<5
   - antlr-python-runtime >=4,<5
   - bokeh
   - click
   - giflib
+  - hypothesis
   - jupyterlab_launcher
   - libpng
   - matplotlib
+  - monkeytype
   - networkx
   - nodejs
   - notebook
@@ -21,9 +22,6 @@ dependencies:
   - python >=3.6,<3.7
   - seaborn
   - setuptools
-  - typed-ast
   - pip:
-    - monkeytype
-    - retype
-    - https://github.com/deathbeds/aye/archive/bc2918d0f89d22861cf3afc02f9c28a3fb54bf7a.tar.gz
-    - https://github.com/sympy/sympy/archive/1e8b5da3edbdbfe23cb664e1fe4982d88133c9b9.tar.gz
+    - https://github.com/deathbeds/aye/archive/7a98066ac228c9449b1db5537db365198f6f84b9.tar.gz
+    - https://github.com/sympy/sympy/archive/bbca46c3f1a2bfb4cfd2b09b70e503f3bba21b7e.tar.gz
